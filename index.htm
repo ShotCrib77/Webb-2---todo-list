@@ -13,12 +13,23 @@
     <!-- Sectionen för att skriva in en input till sin todo-lista -->
     <section class="submit-todo-item-section">
       <input id="text-input" type="text" value="" placeholder="Input">
-      <button id="submit-input">Lägg till</button>
+      <button onClick="addItemButton()" id="submit-input">Lägg till</button>
     </section>
     <section id="todo-list-section">
-
+      <ul id="todo-list-list">
+        
+      </ul>
     </section>
   </main>
   <script src="functions.js"></script>
+  <script>
+    function addItemButton() {
+      const inputValue = document.getElementById("text-input").value;
+      createToDoItem("todo-list-list", inputValue)
+    }
+
+    const listContainer = document.getElementById("todo-list-list") 
+    deleteToDoItem(listContainer)
+  </script>
 </body>
 </html>

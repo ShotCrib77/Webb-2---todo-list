@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #262626;
+  background-color: #222222;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -21,6 +21,8 @@ main {
   margin: auto;
 }
 
+/* Css för input-och-knappen sektionen */
+
 .submit-todo-item-section {
   width: 100%;
   max-width: 600px;
@@ -34,6 +36,7 @@ main {
   text-align: center;
   height: 2.5rem;
   font-size: 0.8rem;
+
 }
 
 #text-input {
@@ -45,8 +48,37 @@ main {
   width: 30%
 }
 
+
+/* Css för listan */
+#todo-list-section {
+
+  background-color: #262626;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 75%;
+  margin: 2rem auto;
+}
+
+#todo-list-list li {
+  color: #f6f6f6;
+  margin-top: 1rem;
+}
+
+#todo-list-list li p {
+  width: 75%;
+  overflow: scroll;
+}
+
+
+#todo-list-list li div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media query så att "Lägg till"-knappen får plats på mindre skärmar utan att göra input pytteliten*/
 @media (max-width: 500px) {
   .submit-todo-item-section {
     flex-direction: column;
   }
 }
+
