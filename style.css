@@ -1,0 +1,52 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #262626;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #f6f6f6;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.submit-todo-item-section {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.submit-todo-item-section input, button {
+  text-align: center;
+  height: 2.5rem;
+  font-size: 0.8rem;
+}
+
+#text-input {
+  width: 85%;
+  margin: 2rem;
+}
+
+#submit-input {
+  width: 30%
+}
+
+@media (max-width: 500px) {
+  .submit-todo-item-section {
+    flex-direction: column;
+  }
+}
